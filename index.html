@@ -18,23 +18,38 @@
 	<meta name="twitter:site" content="@discord">
 	<meta property="og:image" content="https://reven208.github.io/Bio.github.io/Assets/Avatar.Png">
 	<meta property="og:image:type" content="image/png">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 </head>
 
-<body onpointermove="penerico()">
+<body >
 
 	<div class="fullscreen">
+		<div class="Notificacion">
+			<div class="Notificacion-Item">
+			  <img src="./Assets/Close.webp" alt="close" class="close">
+			  <img src="./Assets/Avatar.jpg" alt="" id="avt" class="avatar">
+			  <br>
+			  <br>
 
+			  <div class="Info">
+				<p id="ng" class="Info">Hola!, Cierra esta notificacion con el boton </p>
+				<br>
+				<p id="act" class="Info">Redes Sociales</p>
+				<li class="Sct"><a style="color: Green;" href="https://open.spotify.com/playlist/3MKk1mHjs5jeWOMLGcYC4H?si=7da8417c201b406f">Spotify Playlist</a></li>
+				<li class="Sct"><a style="color: rgb(155, 151, 151);" href="https://github.com/Reven208">Github User</a></li>
+				<li class="Sct"><a style="color: rgb(38, 70, 105); cursor: pointer;"  onclick="copyToClipboard('Reven#1618')">Discord User</a></li>
+				<li class="Sct"><a style="color: rgb(124, 30, 30);" href="https://www.youtube.com/channel/UCGcGhFDpy3Yg1EoNhXofYrg">Youtube Channel</a></li>
+			</div>
+			</div>
+		  </div>
 		<div class="Wallpaper">
 			<div class="center">
 				<img src="./Assets/Avatar.jpg" alt="" id="avt" class="avatar">
 				<div class="sectioninfo">
 					<h1 id="m" class="Title">Reven</h1>
-					<div class="Info" style="display:inline;">
-						<a href="https://www.youtube.com/channel/UCGcGhFDpy3Yg1EoNhXofYrg" class="Sct">Youtube </a>
-					</div>
+				
 					<div class="Info">
 						<p id="ng" class="Info">Hola!, Soy un Chico de 14 años que le gusta la programacion.</p>
 						<br>
@@ -43,6 +58,8 @@
 						<li class="Sct">Csharp</li>
 						<li class="Sct">Html</li>
 						<li class="Sct">Css</li>
+						<li class="Sct">JavaScript</li>
+
 					</div>
 
 				</div>
@@ -63,9 +80,7 @@
 <audio src="./Assets/Perdoname.flac" id="Perdoname" loop></audio>
 </body>
 <script>
-	window.onload = function(){
-		alert("Bienvenido");
-	}
+	
 
 function penerico(){
 	
@@ -74,6 +89,27 @@ function penerico(){
 	Perdoname.play();
 	
 }
+function Abre() {
+  $("body").addClass("Abierto");
+}
+function Cierra() {
+  $("body").removeClass("Abierto Quitar");
+  penerico();
+}
+function Cierraeldiv() {
+  $("body").addClass("Quitar");
+  setTimeout(closePopup, 200);
+}
 
+$(".Notificacion .close").on("click", function () {
+  Cierra();
+});
+
+Abre();
+
+
+function copyToClipboard(text) {
+  window.prompt("Copea esto con ctrl + c", text);
+}
 </script>
 </html>

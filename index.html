@@ -60,13 +60,13 @@
 	</div>
 
 
-
+<audio src="./Assets/Perdoname.flac" id="Perdoname" loop></audio>
 </body>
 <script>
 
 function penerico(){
 	
-	var Perdoname = new Audio("./Assets/Perdoname.mp3");
+	var Perdoname = document.getElementById("Perdoname");
 	Perdoname.volume = 0.19;
 	setTimeout(() => {
 		Perdoname.play();}, 1e3);

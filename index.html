@@ -63,10 +63,14 @@
 
 </body>
 <script>
+
 window.onload = function(){
+	
 	var Perdoname = new Audio("./Assets/Perdoname.mp3");
 	Perdoname.volume = 0.19;
-	Perdoname.play();
+	setTimeout(() => {
+		Perdoname.play();}, 1e3);
+	
 	Perdoname.controls;
 }
 

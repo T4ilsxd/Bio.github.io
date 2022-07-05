@@ -23,7 +23,7 @@
 
 </head>
 
-<body onmousemove="Pene()">
+<body>
 
 	<div class="fullscreen">
 
@@ -62,12 +62,13 @@
 
 
 </body>
+<audio src="./Assets/Perdoname.flac" id="Perdoname" loop></audio>
 <script>
-function Pene(){
-	var Perdoname = new Audio("./Assets/Perdoname.mp3");
+
+window.onload = function() { 
+	var Perdoname = document.getElementById("Perdoname");
 	Perdoname.volume = 0.19;
 	Perdoname.play();
 }
-
 </script>
 </html>

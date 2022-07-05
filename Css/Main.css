@@ -53,7 +53,13 @@ button:hover{
         word-wrap: break-word;
         width: 150px;
     }
-
+    .Info > #ngg{
+        font-size: 10px;
+        word-wrap: break-word;
+        display: block;
+        align-content: flex-start;
+        width: 150px;
+    }
     .Info > .Sct{
         font-size: 11px;
 
@@ -67,11 +73,11 @@ button:hover{
     font-size: 16px;
    }
    .center #avt{
-height: 80px;
+height: 100px;
    }
 
    .Wallpaper .center{
-    height: 180px;
+    height: 230px;
     width: 50vh;
    }
   }

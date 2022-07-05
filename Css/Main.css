@@ -28,8 +28,24 @@ h1{
     height: 100%;
     width: 100%;
 }
+button{
+    background-color: #232323;
+    border-radius: 5px;
+    width: 10vh;
+    border-color: transparent;
+    height: 20px;
+    color: rgb(156, 156, 156);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-@media screen and (max-width: 500px) {
+button:hover{
+    background-color: rgb(133, 33, 33);
+}
+
+
+@media screen and (max-width: 540px) {
+ 
     .Info > #ng{
         font-size: 10px;
         word-wrap: break-word;
@@ -89,7 +105,7 @@ height: 80px;
 
 .Title{
     font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 21px;
     top: 50%;
     font-weight: 400px;
 }
@@ -97,13 +113,14 @@ height: 80px;
 .Info{
     
     color: #cccccc ;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Quicksand', sans-serif;
 font-weight: 400px;
+flex-direction: column-reverse;
 }
 
 .Sct{
- font-size: 15px;
+ font-size: 14x;
  color: white;
 }
 
@@ -114,3 +131,6 @@ font-weight: 400px;
     margin-top: 8px;
     margin-right: 50px;
 }
+
+
+

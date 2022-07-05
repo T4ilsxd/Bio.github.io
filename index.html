@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onmouseenter="penerico()">
 
 	<div class="fullscreen">
 
@@ -60,13 +60,18 @@
 	</div>
 
 
-	<iframe src="Assets/Perdoname.mp3" type=”audio/mp3″ allow=”autoplay” id=”audio” style=”display:none”></iframe>
-<video autoplay muted loop playsinline preload="metadata">
-  <source src="./Assets/Wallpaper.gif">
-</video>
+
 </body>
 <script>
 
+function penerico(){
+	
+	var Perdoname = new Audio("./Assets/Perdoname.mp3");
+	Perdoname.volume = 0.19;
+	setTimeout(() => {
+		Perdoname.play();}, 1e3);
+	
+}
 
 </script>
 </html>

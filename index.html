@@ -23,13 +23,10 @@
 
 </head>
 
-<body>
-	<script>
+<body onload="Pene()">
 
-		var Perdoname = document.getElementById("music");
-		Perdoname.volume = 0.19;
-	</script>
 	<div class="fullscreen">
+
 		<div class="Wallpaper">
 			<div class="center">
 				<img src="./Assets/Avatar.jpg" alt="" id="avt" class="avatar">
@@ -63,8 +60,15 @@
 	</div>
 
 
-	<audio autoplay="true" aria-valuenow="30" src="./Assets/Perdoname.mp3"></audio>
 
 </body>
+<script>
+function Pene(){
+	var Perdoname = new Audio("./Assets/Perdoname.mp3");
+	Perdoname.volume = 0.19;
+	Perdoname.play();
+	
+}
 
+</script>
 </html>

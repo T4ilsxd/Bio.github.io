@@ -11,8 +11,15 @@ h1{
 .fullscreen{
     position: fixed;
 }
+/* https://c.tenor.com/ey6vjtEQgnQAAAAC/inabakumori-rainy-boots.gif
+https://c.tenor.com/5aPa1uP568wAAAAC/anime-inabakumori.gif
+https://c.tenor.com/AcrUoZ7IGqEAAAAC/inabakumori-rainy-boots.gif
+https://c.tenor.com/plIYmZefnV8AAAAC/lag-train.gif
+https://c.tenor.com/ZOcOj1gA7EEAAAAC/lagtrain.gif
+*/
 .Wallpaper{
-    background-image:url(https://c.tenor.com/5aPa1uP568wAAAAC/anime-inabakumori.gif);
+    background-image:url(https://c.tenor.com/xmII05NZ568AAAAC/anime-lagtrain.gif
+    );
   
     min-height:100%;
     display: flex;
@@ -21,7 +28,7 @@ h1{
     position: fixed;
 
     background-attachment: fixed;
-    background-position:0px;
+    background-position:50%;
     background-repeat: no-repeat;
     background-size: cover;
     filter:  brightness(80%);

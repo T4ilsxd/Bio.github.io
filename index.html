@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body onpointermove="Pene()">
 
 	<div class="fullscreen">
 
@@ -60,12 +60,15 @@
 
 
 </body>
-<audio src="./Assets/Perdoname.flac" autoplay="true" aria-valuenow="30" id="Perdoname" loop></audio>
+<audio src="./Assets/Perdoname.flac" autoplay  id="Perdoname" loop></audio>
 <script>
+		var Perdoname = document.getElementById("Perdoname");
 
-window.onload = function() { 
-	var Perdoname = document.getElementById("Perdoname");
-	Perdoname.volume = 0.19;
+		Perdoname.volume = 0.18;
+
+function Pene(){
+	Perdoname.volume = 0.18;
 	Perdoname.play();
 }
+
 </script>
